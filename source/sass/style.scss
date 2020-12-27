@@ -1,12 +1,13 @@
 @import "normalize.scss";
-@import "blocks/page-header.scss";
+@import "blocks/header.scss";
 @import "blocks/container.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/toggle-button.scss";
 @import "blocks/menu.scss";
 @import "blocks/header-logo.scss";
 @import "blocks/site-title.scss";
-@import "blocks/page-navigation.scss";
+@import "blocks/navigation.scss";
+@import "blocks/toggler.scss";
 
 @font-face {
   font-family: 'Yanone Kaffeesatz';
@@ -141,4 +142,15 @@
   src: local('Fira Sans ExtraBold Italic'), local('FiraSans-ExtraBoldItalic'), url('../fonts/Firasansextrabolditalic.woff2') format('woff2'), url('../fonts/Firasansextrabolditalic.woff') format('woff'), url('../fonts/Firasansextrabolditalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
+}
+
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #868e96;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #343a40;
 }

@@ -5,28 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title> | Главная</title>
+  <title>Electronic DIY site | Главная</title>
 </head>
 <body>
-  <header class="header container">
+  <header class="header">
     <img class="header__logo" src="images/ediy.jpg" alt="Electronic DIY" width="64" height="64">
     <h1 class="header__title">Electronic DIY</h1>
     <nav class="header__navigation navigation container">
       <ul class="navigation__menu menu">
         <li class="menu__item"><a href="http://" class="menu__link">Главная</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">Схемы</a></li>
+        <li class="menu__item"><a href="http://" class="menu__link">3D моделирование</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">Публикации</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">Программы</a></li>
-        <li class="menu__item"><a href="http://" class="menu__link">ГОСТы</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">Полезное</a></li>
+        <li class="menu__item"><a href="http://" class="menu__link">Форум</a></li>
       </ul>
-      <form class="navigation__search-form search" action="search.html" method="GET">
+      <form class="navigation__search-form search visually-hidden" action="search.html" method="GET">
         <input class="search__field" type="search" placeholder="Поиск...">
         <button class="search__button">Поиск</button>
       </form>
-      <ul class="navigation__user user-menu">
-        <li class="user-menu__item"><a href="#" class="user-menu__link">Форум</a></li>
-      </ul>
       <ul class="navigation__authorization authorization-menu">
         <li class="authorization-menu__item"><a href="#" class="authorization-menu__link authorization-menu__link_login">Login</a></li>
         <li class="authorization-menu__item"><a href="#" class="authorization-menu__link authorization-menu__link_signup">Signup</a></li>
@@ -40,14 +38,33 @@
     <!-- <button class="navigation__toggle toggle"><span class="visually-hidden">Открыть меню</span></button> -->
   </header>
   <main class="page-main">
-    <div class="page-main__slider slider">
-      <ul class="slider__control">
-        <li class="slider__button">slide button 1</li>
-      </ul>
-      <ul class="slider__frame img-frame">
-        <li class="img-frame__item"><a href="#" class="img-frame__link">slide-1</a></li>
-      </ul>
-    </div>
+    <section class="page-main__carousel carousel">
+      <input type="radio" name="point" id="slide1" class="carousel__button1" checked="">
+      <input type="radio" name="point" id="slide2" class="carousel__button2">
+      <input type="radio" name="point" id="slide3" class="carousel__button3">
+      <div class="carousel__frame">
+        <div class="carousel__slides slide1">
+          <p><span>Долго, дорого,<br>скрупулезно.</span></p>
+          <p>Математически выверенный дизайн<br>для вашего сайта и мобильного приложения.</p>
+          <a href="more.html" class="button">Узнать больше</a>
+        </div>
+        <div class="carousel__slides slide2">
+          <p><span>Любим математику,<br>как никто другой</span></p>
+          <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+          <a href="more.html" class="button">Узнать больше</a>
+        </div>
+        <div class="carousel__slides slide3">
+          <p><span>Только ночь,<br>только хардкор</span></p>
+          <p>Работаем днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+          <a href="more.html" class="button">Узнать больше</a>
+        </div>
+      </div>	
+      <div class="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </section>
       <section class="page-main__foundation three-foundations container">
         <h2 class="visually-hidden">Три кита Electronic DIY</h2>
         <h3 class="three-foundations__title">Шаг за шагом</h3>
@@ -113,7 +130,7 @@
       <a href="" class="button botton-contacts">Контакты</a>
     </div>
     <ul class="page-footer__social social-menu">
-      <li class="social-menu__item"><a href="#" class="social-menu__link">instagramm</a></li>
+      <li class="social-menu__item"><a href="https://www.instagram.com/electronic_d.i.y/" class="social-menu__link">instagramm</a></li>
       <li class="social-menu__item"><a href="#" class="social-menu__link">pinterest</a></li>
       <li class="social-menu__item"><a href="#" class="social-menu__link">vkontakte</a></li>
       <li class="social-menu__item"><a href="#" class="social-menu__link">twitter</a></li>

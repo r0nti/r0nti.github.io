@@ -17,6 +17,10 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var ghPages = require('gh-pages');
+var path = require('path');
+
+exports.deploy = deploy;
 
 gulp.task("copy", function() {
     return gulp.src([
@@ -28,6 +32,10 @@ gulp.task("copy", function() {
       })
       .pipe(gulp.dest("build"));
     });
+
+    function deploy(cb) {
+      ghPages.publish(path.join(process.cwd(), 'build'), cb);
+    }
 
   gulp.task("clean", function() {
     return del("build");

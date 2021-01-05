@@ -1,0 +1,25 @@
+.carousel {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+.carousel__control {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel__slides {
+    display: none;
+    width: 320px;
+    height: 480px;
+
+    &:first-of-type {
+        display: block;
+        background: url("../../images/img-circuits-post-1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+}

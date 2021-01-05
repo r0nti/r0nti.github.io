@@ -1,0 +1,27 @@
+.social-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.social-menu__link {
+    display: block;
+
+    &--instagram {
+        background: url("../../images/icon-instagram.svg") no-repeat center;
+        width: 40px;
+        height: 40px;
+    }
+
+    &--pinterest {
+        background: url("../../images/icon-pinterest.svg") no-repeat center;
+        width: 40px;
+        height: 40px;
+    }
+
+    &--github {
+        background: url("../../images/icon-github.svg") no-repeat center;
+        width: 40px;
+        height: 40px;
+    }
+}

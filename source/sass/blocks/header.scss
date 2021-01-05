@@ -2,11 +2,13 @@
   display: block;
   min-height: 56px;
   background-color: #BD5D38;
+  margin: 0;
+  padding: 0;
 }
 
 .header__title {
   display: inline-block;
-  margin: 10px 20px;
+  margin: 20px 20px;
   font-family: 'Yanone Kaffeesatz';
   color: #f3f3f3;
 }

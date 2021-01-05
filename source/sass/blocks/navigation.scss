@@ -1,10 +1,16 @@
 .navigation {
     width: 100%;
     background-color: #BD5D38;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navigation__toggle {
     position: absolute;
-    top: 8px;
+    top: 18px;
     right: 20px;
+}
+
+.navigation__authorization {
+    margin: 0;
+    padding: 0;
 }

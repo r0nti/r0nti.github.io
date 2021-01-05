@@ -15,48 +15,43 @@
       <ul class="navigation__menu menu">
         <li class="menu__item"><a href="http://" class="menu__link">Главная</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">Схемы</a></li>
+        <li class="menu__item"><a href="http://" class="menu__link">САПР</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">3D моделирование</a></li>
-        <li class="menu__item"><a href="http://" class="menu__link">Публикации</a></li>
-        <li class="menu__item"><a href="http://" class="menu__link">Программы</a></li>
         <li class="menu__item"><a href="http://" class="menu__link">Полезное</a></li>
-        <li class="menu__item"><a href="http://" class="menu__link">Форум</a></li>
       </ul>
+      <!-- Поиск на странице сайта скрыт до расширения функционала -->
       <form class="navigation__search-form search visually-hidden" action="search.html" method="GET">
         <input class="search__field" type="search" placeholder="Поиск...">
         <button class="search__button">Поиск</button>
       </form>
-      <ul class="navigation__authorization authorization-menu">
+      <!-- авторизация на сайте скрыта до расширения функционала -->
+      <ul class="navigation__authorization authorization-menu visually-hidden">
         <li class="authorization-menu__item"><a href="#" class="authorization-menu__link authorization-menu__link_login">Login</a></li>
         <li class="authorization-menu__item"><a href="#" class="authorization-menu__link authorization-menu__link_signup">SignUp</a></li>
       </ul>
+      <button class="navigation__toggle toggler" type="button">
+        <span class="toggler__icon"></span>
+        <span class="toggler__icon"></span>
+        <span class="toggler__icon"></span>
+      </button>
     </nav>
-    <button class="navigation__toggle toggler" type="button">
-      <span class="toggler__icon"></span>
-      <span class="toggler__icon"></span>
-      <span class="toggler__icon"></span>
-    </button>
-    <!-- <button class="navigation__toggle toggle"><span class="visually-hidden">Открыть меню</span></button> -->
   </header>
-  <main class="page-main">
-    <section class="page-main__carousel carousel">
-      <input type="radio" name="point" id="slide1" class="carousel__button1" checked="">
-      <input type="radio" name="point" id="slide2" class="carousel__button2">
-      <input type="radio" name="point" id="slide3" class="carousel__button3">
+  <main class="main">
+    <section class="main__carousel carousel">
+      <div class="carousel__control">
+        <input type="radio" name="point" id="slide1" class="carousel__button1" checked="">
+        <input type="radio" name="point" id="slide2" class="carousel__button2">
+        <input type="radio" name="point" id="slide3" class="carousel__button3">
+      </div>
       <div class="carousel__frame">
-        <div class="carousel__slides slide1">
-          <p><span>Долго, дорого,<br>скрупулезно.</span></p>
-          <p>Математически выверенный дизайн<br>для вашего сайта и мобильного приложения.</p>
-          <a href="more.html" class="button">Узнать больше</a>
+        <div class="carousel__slides slide">
+          <a href="more.html" class="button button__more">Узнать больше</a>
         </div>
-        <div class="carousel__slides slide2">
-          <p><span>Любим математику,<br>как никто другой</span></p>
-          <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-          <a href="more.html" class="button">Узнать больше</a>
+        <div class="carousel__slides slide">
+          <a href="more.html" class="button button__more">Узнать больше</a>
         </div>
-        <div class="carousel__slides slide3">
-          <p><span>Только ночь,<br>только хардкор</span></p>
-          <p>Работаем днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-          <a href="more.html" class="button">Узнать больше</a>
+        <div class="carousel__slides slide">
+          <a href="more.html" class="button button__more">Узнать больше</a>
         </div>
       </div>	
       <div class="controls">
@@ -65,7 +60,7 @@
         <label for="slide3"></label>
       </div>
     </section>
-      <section class="page-main__foundation three-foundations container">
+      <section class="main__foundation three-foundations container">
         <h2 class="visually-hidden">Три кита Electronic DIY</h2>
         <h3 class="three-foundations__title">Шаг за шагом</h3>
         <p class="three-foundations__content">Каждый раз, шаг за шагом, мы движемся вперед, чтобы достичь своей цели. Именно так мы и создаем свои проекты, вдыхаем жизнь старым вещам, создаем новые реалии, давая свободу мысли и творчеству рук.</p>
@@ -74,7 +69,7 @@
         <h3 class="three-foundations__title">Быть лучше</h3>
         <p class="three-foundations__content">Когда создаем что-то новое, мы сами того не замечая становимся лучше, сильнее и умнее. Привносим в мир знаний свой вклад, делимся своими идеями с другими, видим работы других и тут наступает синергия. Это то чего не хватает многим, чтобы сделать свой первый шаг</p>
       </section>
-      <div class="page-main__content main-content container">
+      <div class="main__content main-content container">
         <h2 class="visually-hidden">Категории проектов</h2>
         <strong class="main-content__slogan">Собери свой проект</strong>
         <section class="main-content__category category category--circuits">
@@ -83,41 +78,10 @@
             <li class="project-list__item project-item">
               <div class="project-item__card card">
                 <img src="https://via.placeholder.com/280x197.png" alt="$some-text" class="card__image">
-                <h4 class="card__title">Ремонт принтера</h4>
-                <span>по проекту</span>
-                <a href="http://" class="card__author-link author">Ronti</a>
-                <span>в</span>
-                <a href="http://" class="card__category">Схемы</a>
-              </div>
-            </li>
-            <li class="project-list__item project-item">
-              <div class="project-item__card card">
-                <img src="https://via.placeholder.com/280x197.png" alt="$some-text" class="card__image">
-                <h4 class="card__title">Ремонт принтера</h4>
-                <span>по проекту</span>
-                <a href="http://" class="card__author-link author">Ronti</a>
-                <span>в</span>
-                <a href="http://" class="card__category">Схемы</a>
-              </div>
-            </li>
-            <li class="project-list__item project-item">
-              <div class="project-item__card card">
-                <img src="https://via.placeholder.com/280x197.png" alt="$some-text" class="card__image">
-                <h4 class="card__title">Ремонт принтера</h4>
-                <span>по проекту</span>
-                <a href="http://" class="card__author-link author">Ronti</a>
-                <span>в</span>
-                <a href="http://" class="card__category">Схемы</a>
-              </div>
-            </li>
-            <li class="project-list__item project-item">
-              <div class="project-item__card card">
-                <img src="https://via.placeholder.com/280x197.png" alt="$some-text" class="card__image">
-                <h4 class="card__title">Ремонт принтера</h4>
-                <span>по проекту</span>
-                <a href="http://" class="card__author-link author">Ronti</a>
-                <span>в</span>
-                <a href="http://" class="card__category">Схемы</a>
+                <h4 class="card__title">Заголовок</h4>
+                <span>категория проекта</span>
+                <!-- <a href="http://" class="card__author-link author">Ronti</a> -->
+                <a href="http://" class="card__category">Категория</a>
               </div>
             </li>
           </ul>
@@ -125,17 +89,16 @@
       </div>
   </main>
   <footer class="footer container">
-    <div class="page-footer__feedback-info">
-      <a class="button button__about-us">О нас</a>
-      <a href="" class="button botton-contacts">Контакты</a>
-    </div>
-    <ul class="page-footer__social social-menu">
-      <li class="social-menu__item"><a href="https://www.instagram.com/electronic_d.i.y/" class="social-menu__link">instagramm</a></li>
-      <li class="social-menu__item"><a href="#" class="social-menu__link">pinterest</a></li>
-      <li class="social-menu__item"><a href="#" class="social-menu__link">vkontakte</a></li>
-      <li class="social-menu__item"><a href="#" class="social-menu__link">twitter</a></li>
+    <!-- <div class="footer__feedback-info">
+      <a href="#" class="button button__about-us">О нас</a>
+      <a href="#" class="button button__contacts">Контакты</a>
+    </div> -->
+    <ul class="footer__social social-menu">
+      <li class="social-menu__item"><a href="https://www.instagram.com/electronic_d.i.y/" class="social-menu__link social-menu__link--instagram"><span class="visually-hidden">instagramm</span></a></li>
+      <li class="social-menu__item"><a href="#" class="social-menu__link social-menu__link--pinterest"><span class="visually-hidden">pinterest</span></a></li>
+      <li class="social-menu__item"><a href="#" class="social-menu__link social-menu__link--github"><span class="visually-hidden">github</span></a></li>
     </ul>
-    <ul class="page-footer__menu">
+    <!-- <ul class="footer__menu footer-menu">
       <li class="footer-menu__item">
         <h3 class="footer-menu__title">Категории</h3>
         <a href="" class="footer-menu__link">Схемы</a>
@@ -151,9 +114,8 @@
         <a href="" class="footer-menu__link">Справка</a>
         <a href="" class="footer-menu__link">О нас</a>
       </li>
-    </ul>
-    <hr>
-    <p class="page-footer__copyright">© 2020, Все права защищены</p>
+    </ul> -->
+    <p class="footer__copyright">© 2020, Все права защищены</p>
   </footer>
 </body>
 </html>

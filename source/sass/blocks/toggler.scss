@@ -1,0 +1,29 @@
+
+  .toggler {
+    display: flex;
+    flex-direction: column;
+    width: 56px;
+    height: 40px;
+    padding: 7px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
+  .toggler:hover, .toggler:focus {
+    text-decoration: none;
+  }
+  
+  .toggler__icon {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  @media (min-width: $desktop-width) {
+    .toggler {
+        display: none;
+    }
+}

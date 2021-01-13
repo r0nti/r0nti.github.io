@@ -1,0 +1,34 @@
+.header {
+  display: block;
+  min-height: 56px;
+  background-color: #BD5D38;
+  margin: 0;
+  padding: 0;
+}
+
+.header__title {
+  display: inline-block;
+  margin: 20px 20px;
+  font-family: 'Yanone Kaffeesatz';
+  color: #f3f3f3;
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    text-align: center;
+    z-index: 100;
+    padding: 20px;
+    justify-content: center;
+  }   
+  
+  .header__title {
+    display: none;
+  }
+}

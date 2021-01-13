@@ -22,3 +22,11 @@
     padding: 10px 0 10px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+@media (min-width: $desktop-width) {
+    .footer {
+        width: calc(100% - 17rem);
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

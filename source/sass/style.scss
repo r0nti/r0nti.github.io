@@ -1,3 +1,4 @@
+@import "variables.scss";
 @import "normalize.scss";
 @import "blocks/header.scss";
 @import "blocks/container.scss";
@@ -15,6 +16,8 @@
 @import "blocks/button.scss";
 @import "blocks/footer.scss";
 @import "blocks/social-menu.scss";
+@import "blocks/project-list.scss";
+@import "blocks/card.scss";
 
 @font-face {
   font-family: 'Yanone Kaffeesatz';
